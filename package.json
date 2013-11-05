@@ -1,0 +1,11 @@
+{
+  "name": "gun-pricing",
+  "version": "0.0.1",
+  "description": "gun-pricing",
+  "dependencies": {
+    "cheerio": "~0.12.3",
+    "request": "~2.27.0"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "df9783e7cffcab73e36318e07f52e30a63e15f59"
+}
