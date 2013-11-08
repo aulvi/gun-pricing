@@ -15,6 +15,8 @@ function linkscraper(url) {
 		// Load the page and nab the links from the left side.
 		var $ = cheerio.load(body);
 
+		var gunstuff = $("div.menucontent ul li a");
+
 		$("div.menucontent ul li a").each(function(i, elem) {
 			var entry = { 
 				sourceUrl: url,
@@ -33,6 +35,10 @@ function linkscraper(url) {
 				}, 200);
 			}
 		});
+
+		if (gunstuff.length < 1) {
+			console.log("Bottom! " + url);
+		}
 	});	
 }
 
